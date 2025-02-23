@@ -1,0 +1,11 @@
+.next = used for cacheing
+node_modules = for storage of packages and other pacakges to built that packages
+package.json=all the information about project (main packages)
+package-lock.json = more information of packages
+public=logo 
+src=almost all the codes are stored here
+.gitignore=files which aren't to be sent to github
+eslinnt =warning,information
+drizzle-orm=for orm queries
+drizzle-kit =for migration
+postgres = driver
