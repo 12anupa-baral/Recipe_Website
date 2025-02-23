@@ -9,3 +9,6 @@ eslinnt =warning,information
 drizzle-orm=for orm queries
 drizzle-kit =for migration
 postgres = driver
+dialect= which database here: "postgresql"
+database migration = conversion of orm to sql query
+migrate = triggers migration

@@ -4,7 +4,7 @@ import React from "react";
 const Card = () => {
   return (
     <Link href="recepie/1" >
-      <div className="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transform transition duration-500 hover:scale-105">
+      <div className="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transform transition duration-500 hover:scale-105 ">
         <div className="relative">
           <img
             className="w-full h-64 object-cover"

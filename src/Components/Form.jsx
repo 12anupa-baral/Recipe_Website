@@ -30,7 +30,14 @@ const Form = () => {
       <textarea name="textarea" id="text" cols="30" rows="10" className="mb-10 h-40 w-full resize-none rounded-md border border-slate-300 p-5 font-semibold text-gray-300">Message</textarea>
     </div>
     <div className="text-center">
-      <a className="cursor-pointer rounded-lg bg-blue-700 px-8 py-5 text-sm font-semibold text-white">Book Appoinment</a>
+      {/* <a className="cursor-pointer rounded-lg bg-blue-700 px-8 py-5 text-sm font-semibold text-white">Book Appoinment</a> */}
+      {pathname =='/create' && 
+        <a className="cursor-pointer rounded-lg bg-blue-700 px-8 py-5 text-sm font-semibold text-white">Create Recipe</a>
+
+        }
+          {pathname !=='/create' && 
+   <a className="cursor-pointer rounded-lg bg-blue-700 px-8 py-5 text-sm font-semibold text-white">Update Recipe</a>
+        }
     </div>
   </div>
 </div>
