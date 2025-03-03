@@ -3,9 +3,10 @@ import { NextResponse } from "next/server";
 import { recipes } from "@/db/schema"; 
 
 export async function GET() {
-  return NextResponse.json({
+  const data=await db.select().from(recipes)
+  return Response.json({
     message: "This is a recipe",
-    // recipes: recipes, // Uncomment if needed
+    recipes: data, // Uncomment if needed
   });
 }
 
