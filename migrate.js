@@ -8,6 +8,7 @@
 //         await connection.end()
 //     }
 // )
+// IEF:immediately envoked function
 
 import { migrate } from "drizzle-orm/postgres-js/migrator";
 import { db } from "./src/db/db.js"; 
