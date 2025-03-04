@@ -24,3 +24,22 @@ export async function GET(request,data){
         },{status:500})
     }  
 }
+
+export async function DELETE(request,data) {
+    const id = data.params.id * 1;
+    try{
+        await db.delete(recipes).where(eq(recipes.id,id));
+        return Response.json({
+            message:"Data Deleted Successfully"
+           
+        },{status:200})
+    }
+    catch(error){
+        return Response.json({
+            message:error.mesaage
+           
+        },{status:500})
+    }  
+  
+    
+}
